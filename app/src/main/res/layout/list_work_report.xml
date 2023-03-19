@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/myCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_50sdp"
+    android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/tvtaskId"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="id"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+
+
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+
+
+
+        <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
+                        android:text="BinID"
+                        android:textSize="20sp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:textColor="@color/black"
+app:layout_constraintStart_toEndOf="@id/tvtaskId"
+                     android:gravity="center"
+                        android:id="@+id/tvBinId"
+
+            />
+                <TextView
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="match_parent"
+                    android:text="Address"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+app:layout_constraintStart_toEndOf="@id/tvBinId"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    android:id="@+id/tvBinAddress"
+
+
+                    />
+        <TextView
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="match_parent"
+            android:text="Complaint Status"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/tvBinAddress"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:id="@+id/tvComplaintStatus"
+
+
+            />
+        <TextView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="match_parent"
+            android:text="DriverName"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/tvComplaintStatus"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:id="@+id/tvDriverName"
+
+
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</HorizontalScrollView>

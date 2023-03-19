@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "720309321546",
+    "firebase_url": "https://hostelfinder-fe1a9-default-rtdb.firebaseio.com",
+    "project_id": "hostelfinder-fe1a9",
+    "storage_bucket": "hostelfinder-fe1a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720309321546:android:22a63ee29f2751b85c8bb3",
+        "android_client_info": {
+          "package_name": "com.example.comvawe_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720309321546-krnopragi9i6m9uonmbnkd9lh6b5q10a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAEAzUmX3tsZ2SzKSrVLdsAK3cTL7VSvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "720309321546-krnopragi9i6m9uonmbnkd9lh6b5q10a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720309321546:android:d1ce8013ec02e3425c8bb3",
+        "android_client_info": {
+          "package_name": "com.example.trash_collector"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720309321546-krnopragi9i6m9uonmbnkd9lh6b5q10a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAEAzUmX3tsZ2SzKSrVLdsAK3cTL7VSvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "720309321546-krnopragi9i6m9uonmbnkd9lh6b5q10a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

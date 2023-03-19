@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateBinActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:orientation="vertical"
+        android:layout_height="0dp">
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bin Address"
+            android:textSize="19sp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/txt_bin_address"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Load Type"
+            android:layout_marginTop="10dp"
+            android:textSize="19sp"
+            android:id="@+id/text_bin_type"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cycle Period"
+            android:layout_marginTop="10dp"
+            android:textSize="19sp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/text_bin_cycle"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Longitude"
+            android:editable="false"
+            android:layout_marginTop="10dp"
+            android:textSize="19sp"
+            android:id="@+id/text_binLong"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Latitude"
+            android:editable="false"
+            android:layout_marginTop="10dp"
+            android:textSize="19sp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/text_binLat"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:text="Select Location From Map"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:background="@drawable/btn_shape"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:id="@+id/slectLocation"
+            />
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/_40sdp"-->
+<!--            android:text="Fetch Current Location"-->
+<!--            android:textSize="18sp"-->
+<!--            android:background="@drawable/btn_shape"-->
+<!--            android:backgroundTint="@color/colorPrimary"-->
+<!--            android:textColor="#ffffff"-->
+<!--            android:onClick="btnSetLocation"-->
+<!--            />-->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:text="Create Bin"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_shape"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:onClick="CreateBin1"
+            />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

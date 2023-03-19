@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubmitComplaintActivity">
+<!--    private String CompId;-->
+<!--    private String binId;-->
+<!--    private String userId;-->
+<!--    private String binAddress;-->
+<!--    private String userEmail;-->
+<!--    private String userName;-->
+<!--    private  String binLong;-->
+<!--    private  String binLat;-->
+<!--    private String key;-->
+<!--    private String complaint;-->
+<!--    private String compStatus;-->
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvCompId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Complaint Id"
+            android:textColor="@color/colorPrimaryDark"/>
+        <EditText
+            android:id="@+id/etCompId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName|textCapSentences"
+            android:hint="Complaint Id"/>
+        <TextView
+            android:id="@+id/tvBinId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bin Id"
+            android:textColor="@color/colorPrimaryDark"/>
+        <EditText
+            android:id="@+id/etBinId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName|textCapSentences"
+            android:hint="Bin Id"/>
+        <TextView
+            android:id="@+id/tvbinAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bin Address"
+            android:textColor="@color/colorPrimaryDark"/>
+        <EditText
+            android:id="@+id/etbinAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName|textCapSentences"
+            android:hint="Bin Address"
+    />
+        <TextView
+            android:id="@+id/tvUserEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Email"
+            android:textColor="@color/colorPrimaryDark"/>
+        <EditText
+            android:id="@+id/etUserEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName|textCapSentences"
+            android:hint="User Email"
+            />
+        <TextView
+            android:id="@+id/tvComplaint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Complaint"
+            android:textColor="@color/colorPrimaryDark"/>
+        <EditText
+            android:id="@+id/etComplaint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start"
+            android:layout_gravity="center"
+            android:inputType="textPersonName|textCapSentences"
+            android:hint="Enter Complaint here...."
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+
+            android:id="@+id/btnUploadComplaint"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_shape"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

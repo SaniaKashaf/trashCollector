@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/my_drawer_layout"
+    tools:openDrawer="start"
+    tools:context=".HomeActivityAdmin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:text="Add Hostel Details and Post Them "
+            android:textColor="@color/tab_indicator_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/addHostelActivity"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_7sdp"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:onClick="CreateBin"
+            android:text="Create Bin"
+            android:textColor="@color/intro_title_color"
+            android:textSize="20sp" />
+        <Button
+
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_7sdp"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:onClick="UpdateBin"
+            android:text="Update Bin"
+            android:textColor="@color/intro_title_color"
+            android:textSize="20sp" />
+        <Button
+
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_7sdp"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:onClick="AddEmployee"
+            android:text="Create Driver"
+            android:textColor="@color/intro_title_color"
+            android:textSize="20sp" />
+        <Button
+
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_7sdp"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:onClick="ViewDrivers"
+            android:text="View Driver"
+            android:textColor="@color/intro_title_color"
+            android:textSize="20sp" />
+        <Button
+
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_7sdp"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:onClick="ViewComplaints"
+            android:text="View Complaints"
+            android:textColor="@color/intro_title_color"
+            android:textSize="20sp" />
+        <Button
+
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_7sdp"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:onClick="WorkReportActivity"
+            android:text="View Work Reports"
+            android:textColor="@color/intro_title_color"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/menu_admin" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

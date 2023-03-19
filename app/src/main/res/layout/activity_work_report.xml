@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".WorkReportActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        >
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/myCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:id="@+id/tvtaskId"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Task Id"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <TextView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="match_parent"
+                android:text="Bin Id"
+                android:textSize="20sp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/tvtaskId"
+                android:gravity="center"
+                android:id="@+id/tvBinId"
+
+                />
+            <TextView
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="match_parent"
+                android:text="Address"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/tvBinId"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/tvBinAddress"
+                />
+            <TextView
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="match_parent"
+                android:text="Complaint Status"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/tvBinAddress"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/tvComplaintStatus"
+                />
+            <TextView
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="match_parent"
+                android:text="DriverName"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/tvComplaintStatus"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/tvDriverName"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvWorkReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+    </HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
